@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amber &amp; Rizwan – Wedding Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--wine:#3a0a14;--deep:#17040c;--rose:#7d1626;--gold:#d9b46c;--goldl:#f2dba6;--cream:#fbf3ec;--blush:#f1dcd5;--ink:#3a1822;
+--script:'Great Vibes','Brush Script MT',cursive;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Montserrat',Arial,sans-serif;
+--vel:repeating-linear-gradient(90deg,#4a0a17 0,#7a1425 14px,#8f1a2e 22px,#6a1020 32px,#3d0812 46px)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--deep);color:var(--cream);font-family:var(--serif);overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+body.lock{overflow:hidden;height:100%}
+.wrap{max-width:480px;margin:0 auto;position:relative;background:var(--deep)}
+.eyebrow{font-family:var(--sans);font-size:10.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.script{font-family:var(--script);font-weight:400}
+.gold{background:linear-gradient(110deg,#b78a3c,#f6e3b0 35%,#c99b48 55%,#f6e3b0 80%,#b78a3c);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:foil 9s ease-in-out infinite alternate}
+@keyframes foil{to{background-position:100% 0}}
+#dust{position:fixed;inset:0;pointer-events:none;z-index:60;width:100%;height:100%}
+/* ---------- cover ---------- */
+#cover{position:fixed;inset:0;z-index:100;overflow:hidden;background:#000;transition:opacity 1.4s ease 2.6s,visibility 0s 4s}
+#cover.open{opacity:0;visibility:hidden}
+.stage{position:absolute;inset:0;background:
+ radial-gradient(ellipse at 50% 38%,#ffe9b8 0,#e0a85a 12%,transparent 45%),
+ linear-gradient(#3a0a14 0,#5b1222 45%,#2a0710 70%,#8a6238 70.3%,#b88a55 82%,#7a5230 100%);
+ transform:scale(1.18);transition:transform 5s cubic-bezier(.25,.6,.2,1)}
+#cover.open .stage{transform:scale(1)}
+.stage .glow{position:absolute;left:50%;top:14%;width:240px;height:240px;margin-left:-120px;border-radius:50%;background:radial-gradient(#fff3d0cc,transparent 65%);animation:breathe 5s ease-in-out infinite}
+@keyframes breathe{50%{opacity:.55;transform:scale(1.12)}}
+.stage svg.ch{position:absolute;left:50%;top:0;width:200px;margin-left:-100px}
+.inner-drape{position:absolute;top:22%;bottom:30%;left:14%;right:14%;background:var(--vel);opacity:.9;box-shadow:inset 0 30px 60px #0008,inset 0 -30px 60px #0006;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+.cur{position:absolute;top:0;bottom:0;width:56%;background:var(--vel);z-index:4;box-shadow:0 0 70px #000d;
+ transition:transform 3.6s cubic-bezier(.65,0,.25,1);will-change:transform}
+.cur::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0008,transparent 25%,transparent 70%,#0009)}
+.cur.l{left:0;transform-origin:left}.cur.r{right:0;transform-origin:right}
+#cover.open .cur.l{transform:translateX(-98%) scaleX(.5)}
+#cover.open .cur.r{transform:translateX(98%) scaleX(.5)}
+.valance{position:absolute;top:0;left:0;right:0;height:46px;background:linear-gradient(#2a0710,#5b1222);border-bottom:2px solid var(--gold);z-index:6;box-shadow:0 8px 20px #000a}
+.cov-in{position:absolute;left:0;right:0;bottom:5%;text-align:center;z-index:7;cursor:pointer;transition:opacity 1s}
+#cover.open .cov-in{opacity:0;pointer-events:none}
+.cov-in .script{font-size:46px;filter:drop-shadow(0 2px 8px #000a)}
+.orn{width:130px;height:12px;margin:10px auto}
+.arch{position:absolute;left:50%;top:14%;width:min(64vw,250px);aspect-ratio:.74;transform:translateX(-50%);border-radius:999px 999px 6px 6px;padding:4px;
+ background:linear-gradient(135deg,#b78a3c,#f6e3b0,#b78a3c);box-shadow:0 18px 50px #000b,0 0 40px #d9b46c44;overflow:hidden}
+.arch img{display:block;width:100%;height:100%;object-fit:cover;object-position:68% 100%;border-radius:999px 999px 3px 3px;background:#f3eeea}
+.tap{font-size:25px;font-style:italic;letter-spacing:.1em;color:var(--goldl);animation:soft 3s ease-in-out infinite}
+@keyframes soft{50%{opacity:.45}}
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:100px 40px 80px;overflow:hidden;
+ background:radial-gradient(ellipse at 50% 50%,#8a1a2d 0,#4a0c19 55%,#17040c 100%)}
+.hero::before{content:"";position:absolute;inset:0;background:var(--vel);opacity:.28}
+.hero::after{content:"";position:absolute;inset:14px;border:1px solid #d9b46c88;pointer-events:none;box-shadow:inset 0 0 0 5px #17040c,inset 0 0 0 6px #d9b46c44}
+.hero>*{position:relative;z-index:2}
+.hero svg.ch{width:150px;margin:-60px 0 6px;animation:sway 9s ease-in-out infinite;transform-origin:50% 0}
+@keyframes sway{50%{transform:rotate(1.2deg)}}
+.bism{font-size:34px;color:var(--goldl);margin-bottom:6px;font-family:'Amiri','Noto Naskh Arabic',serif}
+.line{width:170px;height:1px;margin:16px auto;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.name{font-size:68px;line-height:1.15}
+.amp{font-size:40px;color:var(--gold);margin:2px 0}
+.tag{margin-top:30px;font-family:var(--sans);font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:#ecd2c6}
+.scroll{margin-top:44px;opacity:.9}.scroll i{display:block;width:1px;height:44px;margin:12px auto 0;background:var(--gold);transform-origin:top;animation:drop 2.6s ease-in-out infinite}
+@keyframes drop{0%{transform:scaleY(0)}55%{transform:scaleY(1);opacity:1}100%{opacity:0}}
+/* ---------- sections ---------- */
+section{padding:84px 30px;text-align:center;position:relative}
+.garland{display:block;width:100%;height:44px;margin:-22px 0;position:relative;z-index:5}
+.light{background:linear-gradient(var(--cream),var(--blush));color:var(--ink)}
+.light .eyebrow{color:var(--rose)}
+.light h2{font-size:46px;color:var(--rose);margin:16px 0 14px;font-weight:400}
+.light p{font-size:21px;line-height:1.75;font-style:italic;color:#5a2d38}
+.light .nm{font-size:52px;margin-top:22px}
+.frame{position:relative;width:100%;max-width:330px;height:210px;margin:34px auto 0;padding:10px;background:linear-gradient(135deg,#b78a3c,#f6e3b0,#b78a3c);box-shadow:0 20px 40px #7d162633}
+.frame .in{position:absolute;inset:10px;background:var(--cream);overflow:hidden;box-shadow:inset 0 0 0 1px #b78a3c}
+.reveal{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--ink)}
+.reveal b{font-family:var(--sans);font-size:10px;letter-spacing:.34em;color:var(--rose);font-weight:500}
+.reveal .big{font-size:36px;font-weight:600;margin:10px 0 2px;letter-spacing:.02em}
+.reveal span{font-family:var(--sans);font-size:12px;letter-spacing:.22em;text-transform:uppercase}
+canvas#sc{position:absolute;inset:0;width:100%;height:100%;touch-action:none;transition:opacity 1.6s ease}
+.hint{margin-top:22px;font-family:var(--sans);font-size:10.5px;letter-spacing:.3em;color:var(--rose);animation:soft 3s infinite}
+.dark{background:linear-gradient(var(--deep),var(--wine))}
+.cd{display:flex;justify-content:center;gap:12px;margin-top:34px}
+.cd div{width:70px;padding:14px 0 10px;border:1px solid #d9b46c88}
+.cd b{display:block;font-size:34px;font-weight:500;color:var(--goldl)}
+.cd small{font-family:var(--sans);font-size:8.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+.venue{position:relative;border:1px solid #d9b46c88;padding:56px 20px;outline:1px solid #d9b46c44;outline-offset:6px;background:radial-gradient(circle at 50% 0,#3a0a14,#17040c)}
+.venue h2{font-size:50px;margin:18px 0 6px;line-height:1.15;font-weight:400}
+.venue .city{font-size:20px;letter-spacing:.2em;text-transform:uppercase;color:#e7d3c8}
+.btn{display:inline-block;margin-top:30px;padding:15px 28px;border:1px solid var(--gold);color:var(--goldl);font-family:var(--sans);font-size:10.5px;letter-spacing:.28em;text-decoration:none;text-transform:uppercase;transition:.5s}
+.btn:hover,.btn:active{background:var(--gold);color:var(--deep)}
+.end{background:radial-gradient(ellipse at 50% 100%,#6b1424,var(--deep) 70%);padding-bottom:120px}
+.end h2{font-size:46px;margin:16px 0;font-weight:400;line-height:1.2}
+.end .sm{font-size:30px;color:#f1dcd5;margin:26px 0 6px}
+.end .nm{font-size:62px}
+.fine{margin-top:18px;font-family:var(--sans);font-size:10px;letter-spacing:.28em;color:#e3c9bd}
+.rv{opacity:0;transform:translateY(24px);transition:opacity 1.6s ease,transform 1.6s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.25s}.d2{transition-delay:.5s}.d3{transition-delay:.75s}
+#petals{position:fixed;inset:0;pointer-events:none;z-index:55;overflow:hidden}
+.petal{position:absolute;top:-24px;width:10px;height:13px;background:radial-gradient(circle at 30% 30%,#c8334a,#7d1626);border-radius:80% 0 80% 0;opacity:.65;animation:fall linear infinite}
+@keyframes fall{to{transform:translate(var(--dx),112vh) rotate(540deg)}}
+.amp{animation:ampglow 4s ease-in-out infinite;display:inline-block}
+@keyframes ampglow{50%{text-shadow:0 0 22px #f2dba6aa;transform:scale(1.08)}}
+.hero svg.ch{animation-duration:6s}
+.fx{position:fixed;pointer-events:none;z-index:200;color:var(--goldl);font-size:14px;animation:up 1.6s ease-out forwards;text-shadow:0 0 8px #d9b46c}
+@keyframes up{to{transform:translate(var(--x),var(--y)) scale(.4) rotate(var(--r));opacity:0}}
+.fx.pt{width:8px;height:10px;font-size:0;background:radial-gradient(circle at 30% 30%,#c8334a,#7d1626);border-radius:80% 0 80% 0;text-shadow:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important}.rv{opacity:1;transform:none}}
+</style></head>
+<body class="lock">
+<svg width="0" height="0" style="position:absolute"><defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b78a3c"/><stop offset=".5" stop-color="#f6e3b0"/><stop offset="1" stop-color="#b78a3c"/></linearGradient>
+<g id="chd"><path d="M100 0v34" stroke="url(#g)" stroke-width="2"/><path d="M100 34c-12 0-20 6-22 14h44c-2-8-10-14-22-14z" fill="url(#g)"/>
+<path d="M40 82c10-18 30-28 60-28s50 10 60 28" fill="none" stroke="url(#g)" stroke-width="2.5"/><path d="M62 96c8-14 22-22 38-22s30 8 38 22" fill="none" stroke="url(#g)" stroke-width="2"/>
+<path d="M100 48v90M70 56l-6 60M130 56l6 60" stroke="url(#g)" stroke-width="1.5" fill="none"/>
+<g fill="#fff6dc" opacity=".92"><path d="M100 138l-6 16 6 12 6-12z"/><path d="M64 116l-5 14 5 10 5-10z"/><path d="M136 116l-5 14 5 10 5-10z"/><path d="M82 128l-4 12 4 8 4-8z"/><path d="M118 128l-4 12 4 8 4-8z"/><path d="M44 96l-4 10 4 8 4-8z"/><path d="M156 96l-4 10 4 8 4-8z"/></g>
+<g fill="#ffe3a0"><circle cx="40" cy="80" r="3"/><circle cx="160" cy="80" r="3"/><circle cx="62" cy="68" r="3"/><circle cx="138" cy="68" r="3"/><circle cx="100" cy="54" r="3.5"/></g></g>
+<g id="gar"><path d="M0 22C60 8 120 36 200 22S340 8 400 22" fill="none" stroke="#4a1c26" stroke-width="2"/>
+<g fill="#5a2a2f"><ellipse cx="14" cy="14" rx="14" ry="4" transform="rotate(-25 14 14)"/><ellipse cx="48" cy="30" rx="14" ry="4" transform="rotate(25 48 30)"/><ellipse cx="86" cy="18" rx="14" ry="4" transform="rotate(-20 86 18)"/><ellipse cx="130" cy="32" rx="14" ry="4" transform="rotate(20 130 32)"/><ellipse cx="170" cy="16" rx="14" ry="4" transform="rotate(-25 170 16)"/><ellipse cx="230" cy="30" rx="14" ry="4" transform="rotate(25 230 30)"/><ellipse cx="270" cy="16" rx="14" ry="4" transform="rotate(-20 270 16)"/><ellipse cx="320" cy="30" rx="14" ry="4" transform="rotate(20 320 30)"/><ellipse cx="370" cy="16" rx="14" ry="4" transform="rotate(-25 370 16)"/></g>
+<g><circle cx="30" cy="22" r="9" fill="#8e1b2c"/><circle cx="30" cy="22" r="4" fill="#5a0e1c"/><circle cx="105" cy="26" r="8" fill="#a82339"/><circle cx="105" cy="26" r="3.5" fill="#6b1020"/><circle cx="200" cy="22" r="11" fill="#7d1626"/><circle cx="200" cy="22" r="5" fill="#4a0a14"/><circle cx="296" cy="24" r="8" fill="#a82339"/><circle cx="296" cy="24" r="3.5" fill="#6b1020"/><circle cx="372" cy="22" r="9" fill="#8e1b2c"/><circle cx="372" cy="22" r="4" fill="#5a0e1c"/>
+<g fill="#f6e9e2"><circle cx="66" cy="20" r="3"/><circle cx="150" cy="22" r="3"/><circle cx="250" cy="22" r="3"/><circle cx="335" cy="20" r="3"/></g></g></g>
+</defs></svg>
+<canvas id="dust"></canvas><div id="petals"></div>
+
+<div id="cover">
+  <div class="stage"><div class="glow"></div>
+    <svg class="ch" viewBox="0 0 200 175"><use href="#chd"/></svg>
+    <div class="arch"><img src="couple.jpg" alt="Amber &amp; Rizwan"></div></div>
+  <div class="valance"></div>
+  <div class="cur l"></div><div class="cur r"></div>
+  <div class="cov-in" id="openBtn">
+    <div class="script gold">Amber &amp; Rizwan</div>
+    <svg class="orn" viewBox="0 0 130 12"><path d="M0 6h50M80 6h50" stroke="#d9b46c" stroke-width="1"/><path d="M65 1l5 5-5 5-5-5z" fill="none" stroke="#d9b46c"/></svg>
+    <div class="tap">tap to open</div>
+  </div>
+</div>
+
+<div class="wrap">
+<section class="hero">
+  <svg class="ch" viewBox="0 0 200 175"><use href="#chd"/></svg>
+  <div class="bism rv">بِسْمِ اللهِ</div>
+  <div class="line rv d1"></div>
+  <div class="eyebrow rv d1" style="color:#ecd2c6">We request your presence</div>
+  <div class="script name gold rv d2" style="margin-top:24px">Amber</div>
+  <div class="script amp rv d2">&amp;</div>
+  <div class="script name gold rv d3">Rizwan</div>
+  <div class="tag rv d3">As they begin their forever</div>
+  <div class="scroll eyebrow rv d3">Scroll<i></i></div>
+</section>
+
+<svg class="garland" viewBox="0 0 400 44" preserveAspectRatio="none"><use href="#gar"/></svg>
+<section class="light">
+  <div class="eyebrow rv">With the blessings of Allah</div>
+  <h2 class="script rv d1">A love written in dua</h2>
+  <p class="rv d2">Amber and Rizwan invite you to share in the joy of their union.</p>
+  <div class="script nm gold rv d3" style="color:var(--ink)">Amber &amp; Rizwan</div>
+</section>
+
+<section class="light" style="background:linear-gradient(var(--blush),var(--cream));padding-top:50px">
+  <div class="eyebrow rv">A date to hold close</div>
+  <h2 class="script rv d1">Scratch to Reveal</h2>
+  <div class="frame rv d2"><div class="in">
+    <div class="reveal"><b>YOU’RE INVITED</b><div class="big">14 November 2026</div><span>Saturday · 11:00 AM</span></div>
+    <canvas id="sc"></canvas></div></div>
+  <div class="hint" id="hint">GENTLY SCRATCH TO REVEAL</div>
+</section>
+
+<svg class="garland" viewBox="0 0 400 44" preserveAspectRatio="none" style="transform:scaleY(-1)"><use href="#gar"/></svg>
+<section class="dark">
+  <div class="eyebrow rv">Counting down to</div>
+  <h2 class="script gold rv d1" style="font-size:46px;margin:14px 0;font-weight:400">Our forever begins</h2>
+  <div class="cd rv d2"><div><b id="d">0</b><small>Days</small></div><div><b id="h">0</b><small>Hrs</small></div><div><b id="m">0</b><small>Min</small></div><div><b id="s">0</b><small>Sec</small></div></div>
+</section>
+
+<section class="dark" style="padding-top:10px">
+  <div class="venue rv">
+    <div class="eyebrow">The Venue</div><div class="line"></div>
+    <h2 class="script gold">Grace Continental Hotel</h2>
+    <div class="city">Muzaffarabad</div>
+    <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Grace+Continental+Hotel+Muzaffarabad">View on Google Maps</a>
+  </div>
+</section>
+
+<section class="end">
+  <div class="eyebrow rv">With all our hearts</div>
+  <h2 class="script gold rv d1">Your presence is our present</h2>
+  <p class="rv d1" style="font-size:20px;font-style:italic;color:#e8d3c9">Your love and presence are the greatest gifts.</p>
+  <div class="script sm rv d2">We can’t wait to celebrate with you</div>
+  <div class="script nm gold rv d3">Amber &amp; Rizwan</div>
+  <div class="fine rv d3">14 NOVEMBER 2026 · GRACE CONTINENTAL HOTEL</div>
+</section>
+</div>
+
+<script>
+(function(){
+// gold dust
+var dc=document.getElementById('dust'),dx=dc.getContext('2d'),W,H,ps=[];
+function rs(){W=dc.width=innerWidth;H=dc.height=innerHeight}rs();addEventListener('resize',rs);
+for(var i=0;i<38;i++)ps.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.6+.4,v:Math.random()*.25+.08,p:Math.random()*6,s:Math.random()*.02+.008});
+function loop(){dx.clearRect(0,0,W,H);ps.forEach(function(p){p.y-=p.v;p.p+=p.s;p.x+=Math.sin(p.p)*.2;if(p.y<-5){p.y=H+5;p.x=Math.random()*W}
+dx.globalAlpha=.25+.5*Math.abs(Math.sin(p.p*2));dx.fillStyle='#f2dba6';dx.beginPath();dx.arc(p.x,p.y,p.r,0,7);dx.fill()});requestAnimationFrame(loop)}loop();
+var PT=document.getElementById('petals');
+for(var i=0;i<16;i++){var e=document.createElement('i');e.className='petal';e.style.left=Math.random()*100+'%';
+e.style.setProperty('--dx',(Math.random()*140-70)+'px');e.style.animationDuration=(10+Math.random()*9)+'s';
+e.style.animationDelay=(-Math.random()*16)+'s';e.style.transform='scale('+(.6+Math.random()*.7)+')';PT.appendChild(e);}
+function spark(px,py,n,petals){for(var i=0;i<n;i++){var f=document.createElement('span');f.className='fx'+(petals&&i%2?' pt':'');
+f.textContent='✦';f.style.left=px+'px';f.style.top=py+'px';
+f.style.setProperty('--x',(Math.random()*180-90)+'px');f.style.setProperty('--y',(Math.random()*-150-20)+'px');f.style.setProperty('--r',(Math.random()*200-100)+'deg');
+document.body.appendChild(f);(function(a){setTimeout(function(){a.remove()},1700)})(f);}}
+document.addEventListener('pointerdown',function(e){if(e.target.id!=='sc')spark(e.clientX,e.clientY,5,false)});
+document.getElementById('openBtn').addEventListener('click',function(){
+document.getElementById('cover').classList.add('open');spark(innerWidth/2,innerHeight/2,26,true);
+setTimeout(function(){document.body.classList.remove('lock')},3200)});
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting)x.target.classList.add('in')})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+// scratch
+var c=document.getElementById('sc'),x=c.getContext('2d'),done=false,down=false;
+function init(){var r=c.getBoundingClientRect();c.width=r.width;c.height=r.height;
+var g=x.createLinearGradient(0,0,c.width,c.height);g.addColorStop(0,'#b78a3c');g.addColorStop(.35,'#f6e3b0');g.addColorStop(.6,'#c99b48');g.addColorStop(1,'#a8782c');
+x.fillStyle=g;x.fillRect(0,0,c.width,c.height);x.strokeStyle='#fff7';x.strokeRect(10,10,c.width-20,c.height-20);
+x.fillStyle='#6b4a1a';x.font='italic 22px Cormorant Garamond,Georgia,serif';x.textAlign='center';x.fillText('Scratch to reveal',c.width/2,c.height/2+6);}
+setTimeout(init,400);
+function sc(e){if(!down||done)return;var r=c.getBoundingClientRect();x.globalCompositeOperation='destination-out';
+x.beginPath();x.arc(e.clientX-r.left,e.clientY-r.top,22,0,7);x.fill();x.globalCompositeOperation='source-over';}
+c.addEventListener('pointerdown',function(e){down=true;c.setPointerCapture(e.pointerId);sc(e)});
+c.addEventListener('pointermove',sc);
+c.addEventListener('pointerup',function(){down=false;if(done)return;
+var d=x.getImageData(0,0,c.width,c.height).data,n=0,t=0;for(var i=3;i<d.length;i+=40){t++;if(d[i]<20)n++}
+if(n/t>.45){done=true;c.style.opacity=0;c.style.pointerEvents='none';document.getElementById('hint').textContent='WE WILL SEE YOU THERE';
+spark(innerWidth/2,innerHeight/2,34,true);for(var k=0;k<30;k++)ps.push({x:innerWidth/2+(Math.random()-.5)*260,y:innerHeight/2+(Math.random()-.5)*120,r:Math.random()*1.8+.6,v:Math.random()*.6+.2,p:Math.random()*6,s:.03});}});
+// countdown
+var T=new Date('2026-11-14T11:00:00').getTime();
+function tick(){var s=Math.max(0,Math.floor((T-Date.now())/1000));
+d.textContent=Math.floor(s/86400);h.textContent=Math.floor(s%86400/3600);m.textContent=Math.floor(s%3600/60);document.getElementById('s').textContent=s%60;}
+tick();setInterval(tick,1000);
+})();
+</script>
+</body></html>
